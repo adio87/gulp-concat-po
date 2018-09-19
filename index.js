@@ -61,8 +61,19 @@ var concatPoPlugin = function(fileName, options) {
 
                 if (sameItem) {
                     // Merge items by merging their references
-                    sameItem.references = lodash.unique(sameItem.references.concat(currentItem.references));
+                    sameItem.references = options.latestRef
+                      ? currentItem.references
+                      : lodash.unique(sameItem.references.concat(currentItem.references));
+
+                    // Dump translations in order to aviod untranslated/fuzzy items while editing po file
+                    if (options.dumpFuzzy && sameItem.msgid === sameItem.msgstr[0]) {
+                      sameItem.msgstr = [];
+                    }
                 } else {
+                    // Dump latest translations in order to aviod untranslated/fuzzy items while editing po file
+                    if (options.dumpFuzzyLatest && currentItem.msgid === currentItem.msgstr[0]) {
+                      currentItem.msgstr = [];
+                    }
                     // Add item to the resulting file
                     combinedPo.items.push(currentItem);
                 }
