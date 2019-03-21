@@ -1,0 +1,7 @@
+deploy:
+  provider: npm
+  email: v.klymenko@douleutaras.com
+  api_key:
+    secure: koUgb3PGnl/smBrVg/2fsgN+BFY7Z63XaR6OGJ7hkaz5rXd0AJw3K8qXUHKlYIDlIwnc63y9jZaYy567M6PnMcxnY56QzqxQqVXC5gwA3PwYSCmOWkhL/iW7bmb1wzmgQ6pAEdubpDe84QFJBHlagLsPOqNpzpddi3OhkcTVkBSyPQjOcWh6d7+6b+cRmdCs1ewsvDbXiIz1SoDt4jigVCmiLfWv+KsC0+QQou5EBdGHg7CVDyz3iYkR7r3R53yh9Tps2qDWOP2jfM9tROKN8d5UZmi2T+x1AOHc+5FpFrPmka169Z6S09cCxBGqKUCUimbQW/+CgJuaCN8emGVZ6LD7gKvwF1EdHAgyhpZD0Kdsv0rn5059NS0GOVS3O9hIz+njt6WcVEtTGtWGIucb9TkYF+yMyu2Xjh7tTx+bOQQXfoSddgtK+/h9W0C7He+Ix8wY9iQdQypW22j1AwScqtt/qWJJSx/JlPcTMmlPlxbthDJbTf3I1lKgx07IY6QtTC3yNoWLbOoi1wjZtQhXe8y4upKrbMGKw1CuNHu2S4utrLOxSzfurJhOrbmVu+2w8UeQAKTLlZMzABUGKcq7aITuJqQ3A88w86ufRtnWTnJ+q/n8SKdCebGUF6/orSpVkU+ccIChCLXp//RkvGMElAvKS8JbFY4ryZxexYU9bQo=
+  on:
+    repo: douleutaras/gulp-concat-po
